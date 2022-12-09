@@ -1,0 +1,141 @@
+<div ng-controller="productdetail">
+ <!-- Single Products Section Start -->
+    <div class="section section-padding border-bottom">
+        <div class="container">
+            <div class="row learts-mb-n40">
+
+                <!-- Product Images Start -->
+            <div class="col-lg-6 col-12 learts-mb-40">
+                <div class="product-images">
+                    <div class="product-gallery-slider">
+                        <div class="product-zoom">
+                            <img ng-src="{{detail.img}}" alt="">
+                        </div>
+                        <div class="product-zoom">
+                            <img ng-src="{{detail.detailbig[0].b2}}" alt="">
+                        </div>
+                        <div class="product-zoom">
+                            <img ng-src="{{detail.detailbig[0].b3}}" alt="">
+                        </div>
+                        <div class="product-zoom">
+                            <img ng-src="{{detail.detailbig[0].b4}}" alt="">
+                        </div>
+                    </div>
+                    <div class="product-thumb-slider">
+                        <div class="item">
+                            <img ng-src="{{detail.detailmini[0].d1}}" alt="">
+                        </div>
+                        <div class="item">
+                            <img ng-src="{{detail.detailmini[0].d2}}" alt="">
+                        </div>
+                        <div class="item">
+                            <img ng-src="{{detail.detailmini[0].d3}}" alt="">
+                        </div>
+                        <div class="item">
+                            <img ng-src="{{detail.detailmini[0].d4}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Images End -->
+
+                <!-- Product Summery Start -->
+                <div class="col-lg-6 col-12 learts-mb-40">
+                    <div class="product-summery">
+                        <div class="product-nav">
+                            <a href="#"><i class="fal fa-long-arrow-left"></i></a>
+                            <a href="#"><i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                        <div class="product-ratings">
+                            <span class="star-rating">
+                                <span class="rating-active" style="width: 100%;">ratings</span>
+                            </span>
+                            <a href="#reviews" class="review-link">(<span class="count">3</span> customer reviews)</a>
+                        </div>
+                        <h3 class="product-title">{{detail.name}}</h3>
+                        <div class="product-price">{{detail.price + ' đ'}}</div>
+                        
+                        <div class="product-variations">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="label"><span>Size</span></td>
+                                        <td class="value">
+                                            <div class="product-sizes">
+                                                <a href="#">37</a>
+                                                <a href="#">38</a>
+                                                <a href="#">39</a>
+                                                <a href="#">40</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label"><span>Color</span></td>
+                                        <td class="value">
+                                            <div class="product-colors">
+                                                <a href="#" data-bg-color="#000000"></a>
+                                                <a href="#" data-bg-color="#ffffff"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label"><span>Quantity</span></td>
+                                        <td class="value">
+                                            <div class="product-quantity">
+                                                <span class="qty-btn minus"><i class="ti-minus"></i></span>
+                                                <input type="text" class="input-qty" value="1">
+                                                <span class="qty-btn plus"><i class="ti-plus"></i></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-buttons">
+                            <a href="#" class="btn btn-icon btn-outline-body btn-hover-dark hintT-top" data-hint="Add to Wishlist"><i class="fal fa-heart"></i></a>
+                            <a href="#" class="btn btn-dark btn-outline-hover-dark"><i class="fal fa-shopping-cart"></i> Add to Cart</a>
+                            <a href="#!compare" class="btn btn-icon btn-outline-body btn-hover-dark hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                        </div>
+                        <div class="product-brands">
+                            <span class="title">Brand</span>
+                            <a href="#"><img ng-src="{{detail.logo}}" width="200px" height="100px" alt=""></a>
+                        </div>
+                        <div class="product-meta">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="label">
+                                            <span>Category</span>
+                                        </td>
+                                        <td class="value" style="text-transform: uppercase;">
+                                            <p>{{detail.type[0].name}}</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label"><span>Share on</span></td>
+                                        <td class="va">
+                                            <div class="product-share">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                                <a href="#"><i class="fal fa-envelope"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Summery End -->
+
+            </div>
+        </div>
+    </div>    
+<!-- Single Products Section End -->
+    <script src="assets/js/main.js"></script>
+</div>
+
+
+

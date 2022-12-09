@@ -1,0 +1,178 @@
+<div ng-controller="brandfilter">
+<!-- Page Title/Header Start -->
+<div class="page-title-section section" style="background-image: url('assets/images/slider/wall3.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <div class="page-title">
+                    <h1 class="title" style="color: white">AFY STORE</h1>
+                    <ul class="breadcrumb" >
+                        <li><a href="#" style="font-size: 30px; color: white">Shop &nbsp></a></li>
+                        <li style="font-size: 30px; color: white">&nbsp{{title}}</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Title/Header End -->
+
+<!-- Shop Products Section Start -->
+<div class="section section-padding pt-0">
+
+    <!-- Shop Toolbar Start -->
+    <div class="shop-toolbar section-fluid border-bottom">
+        <div class="container">
+            <div class="row learts-mb-n20">
+
+                <!-- Isotop Filter Start -->
+                
+                <div class="col-md col-12 align-self-center learts-mb-20">
+                    <div class="isotope-filter shop-product-filter" data-target="#shop-products">
+                        
+                        <div class="col-sm-4">
+                            <label for="searchlabel" class="sr-only">Search</label>
+                            <input ng-model="search" id="searchid" class="form-control" placeholder="Search for products" style="margin-top: -10px;">
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="productorder" class="sr-only">Filter by</label>
+                            <select class="form-select" ng-model="productorder">
+                                <option value="name">Name</option>
+                                <option value="price">Price</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-3">
+                            <label for="productorder" class="btn btn-default" style="margin-top: -10px;">Asc&nbsp;&nbsp;<input type="radio" name="direction" class="form-check-input" ng-model="direction" checked></label>
+                            <label for="productorder" class="btn btn-default" style="margin-top: -16px;">Desc&nbsp;&nbsp;<input type="radio" name="direction" value="reverse" class="form-check-input" ng-model="direction"></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Isotop Filter End -->
+            </div>
+        </div>
+    </div>
+    <!-- Shop Toolbar End -->
+
+    <!-- Product Filter Start -->
+    <div id="product-filter" class="product-filter section-fluid bg-light">
+        <div class="container">
+            <div class="row row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-1 learts-mb-n30">
+
+                <!-- Sort by Start -->
+                <div class="col learts-mb-30">
+                    <h3 class="widget-title product-filter-widget-title">Sort by</h3>
+                    <ul class="widget-list product-filter-widget customScroll">
+                        <li><a href="#">Popularity</a></li>
+                        <li><a href="#">Average rating</a></li>
+                        <li><a href="#">Newness</a></li>
+                        <li><a href="#">Price: low to high</a></li>
+                        <li><a href="#">Price: high to low</a></li>
+                    </ul>
+                </div>
+                <!-- Sort by End -->
+
+                <!-- Price filter Start -->
+                <div class="col learts-mb-30">
+                    <h3 class="widget-title product-filter-widget-title">Price filter</h3>
+                    <ul class="widget-list product-filter-widget customScroll">
+                        <li> <a href="#">All</a></li>
+                        <li> <a href="#"><span class="amount"><span class="cur-symbol">£</span>0.00</span> - <span class="amount"><span class="cur-symbol">£</span>80.00</span></a></li>
+                        <li> <a href="#"><span class="amount"><span class="cur-symbol">£</span>80.00</span> - <span class="amount"><span class="cur-symbol">£</span>160.00</span></a></li>
+                        <li> <a href="#"><span class="amount"><span class="cur-symbol">£</span>160.00</span> - <span class="amount"><span class="cur-symbol">£</span>240.00</span></a></li>
+                        <li> <a href="#"><span class="amount"><span class="cur-symbol">£</span>240.00</span> - <span class="amount"><span class="cur-symbol">£</span>320.00</span></a></li>
+                        <li> <a href="#"><span class="amount"><span class="cur-symbol">£</span>320.00</span> +</a></li>
+                    </ul>
+                </div>
+                <!-- Price filter End -->
+
+                <!-- Categories Start -->
+                <div class="col learts-mb-30">
+                    <h3 class="widget-title product-filter-widget-title">Categories</h3>
+                    <ul class="widget-list product-filter-widget customScroll">
+                        <li><a href="#">Gift ideas</a> <span class="count">16</span></li>
+                        <li><a href="#">Home Decor</a> <span class="count">16</span></li>
+                        <li><a href="#">Kids &amp; Babies</a> <span class="count">6</span></li>
+                        <li><a href="#">Kitchen</a> <span class="count">15</span></li>
+                        <li><a href="#">Kniting &amp; Sewing</a> <span class="count">4</span></li>
+                        <li><a href="#">Pots</a> <span class="count">4</span></li>
+                        <li><a href="#">Toys</a> <span class="count">6</span></li>
+                    </ul>
+                </div>
+                <!-- Categories End -->
+
+                <!-- Filters by colors Start -->
+                <div class="col learts-mb-30">
+                    <h3 class="widget-title product-filter-widget-title">Filters by colors</h3>
+                    <ul class="widget-colors product-filter-widget customScroll">
+                        <li><a href="#" class="hintT-top" data-hint="Black"><span data-bg-color="#000000">Black</span></a></li>
+                        <li><a href="#" class="hintT-top" data-hint="White"><span data-bg-color="#FFFFFF">White</span></a></li>
+                        <li><a href="#" class="hintT-top" data-hint="Dark Red"><span data-bg-color="#b2483c">Dark Red</span></a></li>
+                        <li><a href="#" class="hintT-top" data-hint="Flaxen"><span data-bg-color="#d5b85a">Flaxen</span></a></li>
+                        <li><a href="#" class="hintT-top" data-hint="Pine"><span data-bg-color="#01796f">Pine</span></a></li>
+                        <li><a href="#" class="hintT-top" data-hint="Tortilla"><span data-bg-color="#997950">Tortilla</span></a></li>
+                    </ul>
+                </div>
+                <!-- Filters by colors End -->
+
+                <!-- Brands Start -->
+                <div class="col learts-mb-30">
+                    <h3 class="widget-title product-filter-widget-title">Brands</h3>
+                    <ul class="widget-list product-filter-widget customScroll">
+                        <li><a href="#">Alexander</a> <span class="count">(2)</span></li>
+                        <li><a href="#">Carmella</a> <span class="count">(4)</span></li>
+                        <li><a href="#">Danielle</a> <span class="count">(7)</span></li>
+                        <li><a href="#">Diana Day</a> <span class="count">(13)</span></li>
+                        <li><a href="#">Emilia</a> <span class="count">(2)</span></li>
+                        <li><a href="#">Gasmine</a> <span class="count">(15)</span></li>
+                        <li><a href="#">Jack &amp; Ella</a> <span class="count">(7)</span></li>
+                        <li><a href="#">Juliette</a> <span class="count">(11)</span></li>
+                    </ul>
+                </div>
+                <!-- Brands End -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Product Filter End -->
+
+    <div class="section section-fluid learts-mt-70">
+        <div class="container">
+            <!-- Products Start -->
+            <div id="shop-products" class="products row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
+                <div class="col" ng-repeat="brand in brandlist | filter:search | orderBy:productorder:direction">
+                    <div class="product">
+                        <div class="product-thumb">
+                            <a href="#!product/{{brand.id}}" class="image">
+                                <img ng-src="{{brand.img}}" alt="Product Image">
+                                <img class="image-hover " ng-src="{{brand.detailbig[0].b2}}" alt="Product Image">
+                            </a>
+                            <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
+                        </div>
+                        <div class="product-info">
+                            <h6 class="title"><a href="#">{{brand.name}}</a></h6>
+                            <span class="price">{{brand.price + ' đ'}}</span>
+                            <div class="product-buttons">
+                                <a href="#quickViewModal" data-bs-toggle="modal" class="product-button hintT-top" data-hint="Quick View"><i class="fal fa-search"></i></a>
+                                <a href="#" class="product-button hintT-top" data-hint="Add to Cart"><i class="fal fa-shopping-cart"></i></a>
+                                <a href="#!compare" class="product-button hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <!-- Products End -->
+            <div class="text-center learts-mt-70">
+                <a href="#" class="btn btn-dark btn-outline-hover-dark"><i class="ti-plus"></i> More</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Shop Products Section End -->
+<script src="assets/js/main.js"></script>
+</div>   
+    

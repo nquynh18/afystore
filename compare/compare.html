@@ -1,0 +1,56 @@
+<div class="container" ng-controller="compare">
+    <div class="row" style="margin-bottom: 50px;">
+        <div class="col-lg-6">
+            <select class="form-select-1" ng-model="firstproduct" ng-options="x as x.name for x in CompareList">
+                <option value="">---Choose the first product to compare---</option>
+            </select>
+            <div class="COMPAREPRODUCT" ng-show="firstproduct">
+                <div>
+                    <img class="img-thumbnail container-fluid" src="{{firstproduct.img}}">
+                </div>
+                <br>
+                <table>
+                    <tr>
+                        <th>Price</th>
+                        <td>{{firstproduct.price + ' đ'}}</td>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <td style="text-transform: uppercase;">{{firstproduct.type[0].name}}</td>
+                    </tr>
+                    <tr>
+                        <th class="col-sm-6">Brand</th>
+                        <td><img ng-src="{{firstproduct.logo}}"></td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    
+        <div class="col-lg-6">
+            <select class="form-select-1" ng-model="secondproduct" ng-options="x as x.name for x in CompareList">
+                <option value="">---Choose the second product to compare---</option>
+            </select>
+            <div class="COMPAREPRODUCT" ng-show="secondproduct">
+                <div>
+                    <img class="img-thumbnail container-fluid" src="{{secondproduct.img}}" width="270px" height="210px">
+                </div>
+                <br>
+                    <table>
+                        <tr>
+                            <th>Price</th>
+                            <td>{{secondproduct.price+ ' $'}}</td>
+                        </tr>
+                        <tr>
+                            <th>Type</th>
+                            <td style="text-transform: uppercase;">{{secondproduct.type[0].name}}</td>
+                        </tr>
+                        <tr>
+                            <th class="col-sm-6">Brand</th>
+                            <td><img ng-src="{{secondproduct.logo}}"></td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+    </div> 
+</div>

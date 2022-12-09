@@ -1,0 +1,101 @@
+<div ng-controller="aboutus">
+    <!-- Icon Box Style Three Section Start -->
+    <div class="section section-padding border-top">
+        <div class="container">
+            <!-- Section Title Start -->
+            <div class="section-title2 text-center" >
+                <h2 class="title">AFY Store</h2>
+            </div>
+            <!-- Section Title End -->
+            <div class="row g-0 row-cols-md-3 row-cols-1" ng-repeat="about in AboutList">
+
+                <div class="icon-box3 col">
+                    <div class="inner">
+                        <div class="icon"><i class="ti-mobile"></i></div>
+                        <div class="content">
+                            <h6 class="title">PHONE</h6>
+                            <p>{{about.phone}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="icon-box3 col">
+                    <div class="inner">
+                        <div class="icon"><i class="ti-location-pin"></i></div>
+                        <div class="content">
+                            <h6 class="title">ADDRESS</h6>
+                            <p>{{about.address}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="icon-box3 col">
+                    <div class="inner">
+                        <div class="icon"><i class="ti-email"></i></div>
+                        <div class="content">
+                            <h6 class="title">EMAIL</h6>
+                            <p>{{about.mail}}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Icon Box Style Three Section End -->
+
+    <!--Google Map-->
+    <div class="section section-padding">
+        <div class="container">
+            <div class="section-title2 text-center">
+                <h2 class="title title-icon-both">Google Map</h2>
+            </div>
+            <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.625187819946!2d106.6820958!3d10.7633425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1eac99e14d%3A0xbf3e45fe7859557f!2zMjMxIE5ndXnhu4VuIFbEg24gQ-G7qywgUGjGsOG7nW5nIDQsIFF14bqtbiA1LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1669300641455!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!--End Google Map-->
+
+    <!-- Contact Form Section Start -->
+    <div class="section section-padding pt-0">
+        <div class="container">
+            <!-- Section Title Start -->
+            <div class="section-title2 text-center">
+                <h2 class="title">Send a message</h2>
+            </div>
+            <!-- Section Title End -->
+
+            <div class="row">
+                <div class="col-lg-8 col-12 mx-auto">
+                    <div class="contact-form">
+                        <form id="contact-form" method="post" onsubmit="checkform()">
+                            <div class="row learts-mb-n30">
+                                <div class="col-md-6 col-12 learts-mb-30">
+                                    <input id="name" type="text" placeholder="Your Name *" name="name" autofocus required>
+                                </div>
+                                <div class="col-md-6 col-12 learts-mb-30">
+                                    <input id="email" type="email" placeholder="Email *" name="email" autofocus required>
+                                </div>
+                                <div class="col-md-6 col-12 learts-mb-30">
+                                    <input id="phone" type="phone" minlength="10" maxlength="10" placeholder="Your Phone *" name="phone" autofocus required>
+                                </div>
+                                <div class="col-md-6 col-12 learts-mb-30">
+                                    <input id="address" type="text" placeholder="Your Address *" name="address" autofocus required>
+                                </div>
+                                <div class="col-12 learts-mb-30">
+                                    <textarea id="message" name="message" placeholder="Message" autofocus required></textarea>
+                                </div>
+                                <div class="col-12 text-center learts-mb-30">
+                                    <button class="btn btn-dark btn-outline-hover-dark" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-messege"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Contact Form Section End -->
+</div>
+    
